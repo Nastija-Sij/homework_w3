@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #bf7de6;
   --primary-color-rgb: 108, 59, 225;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -13,6 +13,15 @@
   margin: 60px auto;
   max-width: 1200px;
 }
+.btn {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
 h1,
 h2,
@@ -22,7 +31,8 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 90px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -47,7 +57,9 @@ p {
   line-height: 1.5;
   text-align: left;
 }
-
+.navbar-toggler {
+  background-color: #e0c7eea4;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
