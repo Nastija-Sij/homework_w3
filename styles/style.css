@@ -80,7 +80,6 @@ p {
   text-align: left;
 }
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
@@ -98,8 +97,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 .card-title {
- 
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 .contact-link {
   background: var(--primary-color);
@@ -144,4 +142,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-
+.paragraph {
+  min-width: 200px;
+}
