@@ -5,12 +5,20 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 768px) {
-  h1 {
-    color: red;
+  h1.name {
     font-size: 40px;
   }
-  h2 {
-    font-size: 20px;
+  h2.greeting {
+    font-size: 24px;
+  }
+  h3.intro {
+    font-size: 18px;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-text {
+    font-size: 16px;
   }
 }
 
@@ -18,6 +26,11 @@
   margin: 60px auto;
   max-width: 1200px;
 }
+.page-wrapper-about {
+  margin: 60px auto;
+  max-width: 1000px;
+}
+
 .home {
   margin: 60px auto;
   max-width: 1200px;
@@ -40,12 +53,12 @@ h3 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 h3 {
@@ -66,6 +79,55 @@ p {
   line-height: 1.5;
   text-align: left;
 }
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.about-link:hover {
+  background: rgba(var(--primary-color-rgb), 0.2);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.card-title {
+ 
+  margin-bottom: 20px ;
+}
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.contact-link:hover {
+  background: rgba(var(--primary-color-rgb), 0.2);
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
 .navbar-toggler {
   background-color: #e0c7eea4;
 }
@@ -83,50 +145,3 @@ p {
   text-transform: capitalize;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-.contact-link:hover {
-  background: rgba(var(--primary-color-rgb), 0.2);
-  border: 1px solid var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: var(--primary-color);
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-.about-link:hover {
-  background: rgba(var(--primary-color-rgb), 0.2);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
